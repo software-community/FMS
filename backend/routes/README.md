@@ -1,0 +1,2 @@
+# API Routes go here
+Each file should contain CRUD API routes related to a category, like `auth`, `fest`, `event`, etc. The file also must be named the same as the category. Refer to the `example.js` file for a template. For any new routes you create a file for, you also need to add that file to `index.js`.
