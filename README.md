@@ -1,2 +1,2 @@
 # FMS
-The Complete Fest Management System.
+The Complete Fest Management System for IIT Ropar
