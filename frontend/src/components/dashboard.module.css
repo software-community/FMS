@@ -1,0 +1,160 @@
+
+.dashboard_container {
+    display: flex;
+    border: none;
+    box-shadow: 5px 5px 30px black;
+    z-index: 2;
+}
+
+.left {
+    background-color: #f36a8c;
+}
+
+
+.red,
+.yellow,
+.green {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.three_icons {
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.red {
+    background-color: #e74c3c;
+}
+.yellow {
+    background-color: #f1c40f;
+}
+.green {
+    background-color: #27C93F;
+}
+
+.dashboard_title {
+    font-size: 15px;
+    margin-top: 5px;
+}
+.profile_pic {
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addFest {
+    padding: 10px 20px;
+    background-color: #e62a59;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.menu_list {
+    color: white;
+    font-weight: bold;
+    background-color: #f36a8c;
+}
+
+.list_item,
+.list_item_2 {
+    background-color:rgb(220, 76, 76);
+    margin: 10px 0;
+    padding: 5px 10px;
+    width: 100%;
+    border-inline-start: solid 5px white;
+}
+
+.list_item_2 {
+    background-color: rgb(255, 0, 0);
+}
+
+.right {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+}
+
+.top {
+    padding: 15px;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    column-gap: 40px;
+    row-gap: 30px;
+    padding: 15px;
+}
+
+.yourFests {
+    color: black;
+    font-size: 30px;
+}
+
+.grid_pic {
+    width: 180px;
+    height: 100px;
+}
+
+.aarohan,
+.advitiya,
+.zeitgeist {
+    width: 250px;
+    border-radius: 10px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 15px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 830px) {
+    .dashboard_container {
+        width: 700px;
+    }
+    .aarohan,
+    .advitiya,
+    .zeitgeist {
+        width: 220px;
+    }
+}
+
+@media (max-width: 708px) {
+    .dashboard_container {
+        width: 650px;
+    }
+    .aarohan,
+    .advitiya,
+    .zeitgeist {
+        width: 180px;
+    }
+}
+
+@media (max-width: 670px) {
+    .dashboard_container {
+        width: 300px;
+    }
+    .top {
+        width: 450px;
+    }
+    .bottom {
+        grid-template-columns: 500px;
+    }
+}

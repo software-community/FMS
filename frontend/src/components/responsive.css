@@ -1,0 +1,154 @@
+@media ((max-width: 1250px)) {
+    .ans-what-grid {
+        grid-template-columns: 300px 300px;
+    }
+    .dashboard {
+        width: 170px;
+        height: 85px;
+    }
+    .image-layout {
+        width: 1000px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .ans-what-grid {
+        grid-template-columns: 260px 260px;
+    }
+    .grid {
+        font-size: 12px;
+        height: 180px;
+    }
+    .box1-title,
+    .box2-title,
+    .box3-title,
+    .box4-title {
+        font-size: 16px;
+    }
+    .dashboard {
+        width: 150px;
+    }
+    .image-layout {
+        width: 800px;
+        height: 400px;
+    }
+}
+@media (max-width: 930px) {
+    .ans-what-grid {
+        grid-template-columns: 220px 220px;
+    }
+    .grid {
+        font-size: 8px;
+        height: 180px;
+    }
+    .box1-title,
+    .box2-title,
+    .box3-title,
+    .box4-title {
+        font-size: 12px;
+    }
+    .dashboard {
+        width: 150px;
+        height: 100px;
+    }
+    .image-layout {
+        width: 600px;
+        height: 300px;
+    }
+}
+@media (max-width: 780px) {
+    .ans-what-grid {
+        grid-template-columns: 180px 180px;
+    }
+    .grid {
+        font-size: 8px;
+        height: 180px;
+    }
+    .box1-title,
+    .box2-title,
+    .box3-title,
+    .box4-title {
+        font-size: 12px;
+    }
+    .dashboard {
+        width: 120px;
+        height: 100px;
+    }
+    .collage2 {
+        width: 500px;
+        height: 350px;
+    }
+}
+@media (max-width: 640px) {
+    .ans-what-grid {
+        grid-template-columns: 150px 150px;
+    }
+    .grid {
+        font-size: 8px;
+        height: 180px;
+    }
+    .box1-title,
+    .box2-title,
+    .box3-title,
+    .box4-title {
+        font-size: 12px;
+    }
+    .dashboard {
+        width: 120px;
+        height: 100px;
+    }
+    .collage2 {
+        width: 450px;
+        height: 350px;
+    }
+    
+}
+
+@media (max-width: 1250px) {
+    .footer {
+        margin-top: 3600px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .footer {
+        margin-top: 3500px;
+    }
+}
+
+@media (max-width: 937px) {
+    .footer {
+        margin-top: 3450px;
+    }
+}
+
+@media (max-width: 780px) {
+    .footer {
+        margin-top: 3400px;
+    }
+}
+
+@media (max-width: 759px) {
+    .footer {
+        margin-top: 3450px;
+    }
+}
+
+@media (max-width: 725px) {
+    .footer {
+        margin-top: 3560px;
+    }
+}
+
+@media (max-width: 670px) {
+    .footer {
+        margin-top: 3750px;
+    }
+}
+
+@media (max-width: 485px) {
+    .footer {
+        margin-top: 3850px;
+    }
+}

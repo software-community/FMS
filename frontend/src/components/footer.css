@@ -1,0 +1,46 @@
+/* Footer styling */
+
+.footer {
+    background-color: #c75672;
+    margin-top: 3650px;
+    position: absolute;
+    z-index: -2;
+    background: #CC8899;
+    background-size: 300% 300%; 
+    animation: color 12s ease-in-out infinite;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+
+}
+
+.explore,
+.follow,
+.email {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot-title {
+    margin: 10px;
+}
+
+.link-text,
+.link-email {
+    color: rgb(255, 221, 225);
+    font-size: 25px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.link-icon {
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(255, 221, 225);
+    font-size: 40px;
+}
