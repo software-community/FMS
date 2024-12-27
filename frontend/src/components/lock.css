@@ -1,0 +1,99 @@
+/* Lock container styling */
+/* Security container styles */
+.security-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 50px auto;
+    background: #f9f9f9;
+  }
+  
+  /* Badge (circular security icon) */
+  .badge {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Outer ring */
+  .ring {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: rotate-ring 3s infinite linear;
+  }
+  
+  /* Lock body */
+  .lock {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    border: 3px solid #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Ensures the lock is above the shackle */
+  }
+  
+  /* Keyhole */
+  .keyhole {
+    width: 10px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    margin-bottom: -5px;
+    box-shadow: 0 -4px 0 #4caf50 inset;
+  }
+  
+  /* Shackle */
+  .shackle {
+    position: absolute;
+    top: -25px; /* Adjust position relative to the lock */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%) rotate(180deg);
+    transform-origin: center bottom;
+    width: 30px;
+    height: 25px;
+    border: 3px solid white;
+    border-radius: 0 0 50px 50px;
+    background: transparent;
+    z-index: 1; /* Ensures the shackle appears behind the lock */
+  }
+  
+  /* Text styling */
+  .lock-p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Animations */
+  
+  /* Rotating ring animation */
+  @keyframes rotate-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

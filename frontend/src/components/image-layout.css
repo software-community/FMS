@@ -1,0 +1,92 @@
+/* image-layout styling */
+
+.image-layout {
+    position: relative;
+    width: 1200px; /* Adjust as needed */
+    height: 550px;
+    margin: 0 auto; /* Center the layout */
+}
+
+.center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Bring the central image above the lines */
+}
+
+.center-image img {
+    width: 250px; /* Adjust as needed */
+    height: 150px;
+    border: solid 2px white;
+}
+
+.corner-image {
+    position: absolute;
+    z-index: 1;
+}
+
+.corner-image img {
+    width: 150px; /* Adjust as needed */
+    height: 100px;
+    border: solid 2px white; /* Make it circular */
+}
+
+/* Positioning corner images */
+.top-left {
+    top: 10%;
+    left: 10%;
+}
+
+.top-right {
+    top: 10%;
+    right: 10%;
+}
+
+.bottom-left {
+    bottom: 10%;
+    left: 10%;
+}
+
+.bottom-right {
+    bottom: 10%;
+    right: 10%;
+}
+
+/* Lines connecting the images */
+.line {
+    position: absolute;
+    background-color: white; /* Line color */
+    width: 2px; /* Line thickness */
+    z-index: 0; /* Place lines below images */
+    transform-origin: top center; /* Ensure lines rotate correctly */
+}
+
+/* Specific lines for each corner */
+.line-top-left {
+    top: 85%;
+    left: 50%;
+    height: 70%; /* Adjust dynamically */
+    transform: translate(-50%, -50%) rotate(-110deg); /* Adjust angle */
+}
+
+.line-top-right {
+    top: 85%;
+    left: 50%;
+    height: 70%;
+    transform: translate(-50%, -50%) rotate(-71deg);
+}
+
+.line-bottom-left {
+    top: 85%;
+    left: 50%;
+    height: 70%;
+    transform: translate(-50%, -50%) rotate(110deg);
+}
+
+.line-bottom-right {
+    top: 85%;
+    left: 50%;
+    height: 70%;
+    transform: translate(-50%, -50%) rotate(71deg);
+}
