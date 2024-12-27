@@ -26,7 +26,7 @@ function App() {
 
     <div className="line_under_head_addfest"></div>
     <div className="containers_addfest">
-      <form action="/fest" method="POST" enctype="multipart/form-data">
+      <form action="http://localhost:3000/fest" method="POST" enctype="multipart/form-data">
       <div className="form-container_addfest">
         <h2 className="form-title_addfest">Add New Fest</h2>
         <div className="form-group_addfest">
@@ -86,7 +86,7 @@ function App() {
         <div className="form-group_addfest">
             <label for="festHeadPhone">Fest Head Phone Number:</label>
             <input
-                type="tel"
+                type="number"
                 id="festHeadPhone"
                 name="fest_head_mobile_addfest"
                 required
@@ -96,7 +96,7 @@ function App() {
             <label for="description">Description:</label>
             <textarea
                 id="description"
-                name="fest_description"
+                name="fest_description_addfest"
                 required
             ></textarea>
         </div>

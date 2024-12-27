@@ -1,6 +1,5 @@
 const express= require('express');
 const router = express.Router();
-const FileReader = require('filereader');
 const multer=require('multer');
 const upload = multer({ dest: 'uploads/' });
 const fs = require('fs');
@@ -39,7 +38,7 @@ router.post('/addevent',upload.single('files'),async (req,res)=>{
         event_photo
 
     })
-    res.render('/addevent');
+    res.redirect('http://localhost:5173/addevent'); //add url where u wan to redirect again and again when events are submitted
 });
 
 router.get('/fest',(req,res)=>{
@@ -50,14 +49,14 @@ router.post('/fest',upload.single('file'), async (req,res)=>{
 
     imageFile=req.file.path;
 
-    const fest_name=req.body.fest_name;
-    const fest_from=req.body.fest_from;
-    const fest_to=req.body.fest_to;
-    const fest_location=req.body.fest_location;
-    const fest_head_name=req.body.fest_head_name;
-    const fest_head_email=req.body.fest_head_email;
-    const fest_head_mobile=req.body.fest_head_mobile;
-    const fest_desc=req.body.fest_description;
+    const fest_name=req.body.fest_name_addfest.toLowerCase();
+    const fest_from=req.body.fest_from_addfest;
+    const fest_to=req.body.fest_to_addfest;
+    const fest_location=req.body.fest_location_addfest;
+    const fest_head_name=req.body.fest_head_name_addfest;
+    const fest_head_email=req.body.fest_head_email_addfest;
+    const fest_head_mobile=req.body.fest_head_mobile_addfest;
+    const fest_desc=req.body.fest_description_addfest;
     const fest_photo = fs.readFileSync(imageFile, { encoding: 'base64' });
 
     const newUser= await festSchema.create({
@@ -71,13 +70,14 @@ router.post('/fest',upload.single('file'), async (req,res)=>{
         fest_desc,
         fest_photo  
     })
+    console.log(req.body);
     
-    res.redirect('/addevent');
+    res.redirect('http://localhost:5173/addevent'); //add url where u wan to redirect after fest details are submitted when events are submitted
 })
 
-router.get('/received',(req,res)=>{
+router.post('/received',(req,res)=>{
     // req.redirect('/Home');
-    res.send('Data Received');
+    res.send('Data Received'); //add url where u wan to redirect after fest details and all event details are submitted
 })
 
 module.exports = router;

@@ -3,47 +3,47 @@ const mongoose=require('mongoose');
 const festSchema = new mongoose.Schema({
      fest_from:{
         type:String,
-        required:true
+        required:false
     },
 
     fest_to:{
         type:String,
-        required:true
+        required:false
     },
 
     fest_name:{
         type:String,
-        required:true,
+        required:false,
         trim:true
     },
 
     fest_location:{
         type:String,
-        required:true,
+        required:false,
         trim:true
     },
 
     fest_head_name:{
         type:String,
-        required:true,
+        required:false,
         trim:true  
     },
 
     fest_head_email:{
         type:String,
-        required:true,
+        required:false,
         trim:true
     },
 
     fest_head_mobile:{
         type:Number,
-        required:true,
+        required:false,
         trim:true
     },
 
     fest_desc:{
         type:String,
-        required:true,
+        required:false,
         trim:true
     },
 

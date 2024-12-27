@@ -38,7 +38,7 @@ function App() {
 
     <div className="line_under_head_addevent"></div>
     <div className="containers_addevent">
-      <form action="/addevent" method="POST" enctype="multipart/form-data">
+      <form action="http://localhost:3000/addevent" method="POST" enctype="multipart/form-data">
       <div className="form-container_addevent bg-gray-900">
  
     <span className="event-no_addevent">Event</span>
@@ -107,7 +107,7 @@ function App() {
     </div>
   </form>
 </div>
-<form action="/received">
+<form action="http://localhost:3000/received" method="POST">
   <div className="but_addevent but_finish_addevent">
     <button id="button_finish_addevent" type="submit" className="button_addevent button_finish_addevent bg-gray-900 text-white hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">That's All</button>
   </div>
