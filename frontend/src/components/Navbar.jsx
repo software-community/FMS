@@ -3,7 +3,7 @@ function Navbar () {
     return (
         <section className="navbar">
             <div className="navbar-left">
-                <img className="logo" src="./assets/softcom-logo.png" alt="image" />
+                <a href="/"><img className="logo" src="./assets/softcom-logo.png" alt="image" /></a>
             </div>
 
             <div className="navbar-right">

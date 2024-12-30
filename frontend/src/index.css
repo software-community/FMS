@@ -67,7 +67,6 @@ button:focus-visible {
   }
 } */
 
-
 /* Landing Page */
 *{
   margin: 0;
@@ -76,10 +75,9 @@ button:focus-visible {
 }
 
 body {
-  background: linear-gradient(to right, #b68b95, #cc8899, #bb4e69, #ab4760) !important;
+  background: linear-gradient(to right, #3B008A, #4f119f, #532a89, #633f92) !important;   
   background-size: 300% 300%; 
-  animation: color 12s ease-in-out infinite;
-  z-index: -1;
+  animation: color 10s ease-in-out infinite;
 }
 
 @keyframes color{
@@ -95,12 +93,13 @@ body {
 }
 
 .navbar {
-  background-color: #cc8899;
+  background-color: #4c00b0;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  box-shadow: 0px 5px 50px rgb(0, 0, 0);
+  box-shadow: 0px 5px 30px rgb(0, 0, 0, 0.8);
+  z-index: 100;
 }
 
 .navbar-right {
@@ -109,9 +108,10 @@ body {
 }
 
 .logo {
-  width: 100px;
-  margin: 10px 30px;
+  width: 60px;
+  margin: 5px 30px;
   border-radius: 50%;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
 }
 
 .login-button,
@@ -137,19 +137,14 @@ body {
 }
 
 .what {
-  margin-top: 124px;
-  z-index: -1;
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 64px 32px;
+  padding: 110px 32px;
+  padding-bottom: 70px;
   /* width: calc(100% - 64px); */
   box-sizing: border-box;
   width: 100%;
-  background: linear-gradient(to right, #b68b95, #cc8899, #bb4e69, #ab4760);
-  background-size: 300% 300%; 
-  animation: color 12s ease-in-out infinite;
 }
 
 .what-content {
@@ -171,12 +166,13 @@ body {
 }
 
 .grid {
-  background-color: #2980b9;
+  background-color: #6f3cc7;
   padding: 25px;
   text-align: left;
   border-radius: 20px;
   font-size: 15px;
   height: 200px;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.7);
 }
 
 .box1-title,
@@ -209,9 +205,8 @@ body {
 }
 
 .what-is-fms{
-  background-color: #da2a56;
+  background-color: #4c00b0;
   border: none;
-  margin: 0 30px;
   margin-right: 20px;
   padding: 16px;
   border-radius: 20px;
@@ -223,9 +218,8 @@ body {
 }
 
 .ans-what {
-  background-color: #da2a56;
+  background-color: #4c00b0;
   border: none;
-  margin: 0 30px;
   margin-left: 20px;
   padding: 16px;
   border-radius: 20px;
@@ -234,6 +228,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .what-title {
@@ -244,25 +242,10 @@ body {
   margin-bottom: 20px;
 }
 
-.ans-what {
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.ans-what:hover,
-.what-is-fms:hover {
-  background-color: #f00c45;
-  /* width: 700px; */
-  /* height: 500px; */
-  /* transition: 0.15s; */
-}
-
 /* Card Shadow and Animation */
 .what-is-fms,
 .ans-what {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease;
   animation: fade-in 1s ease;
 }
 
@@ -276,41 +259,30 @@ body {
     transform: scale(1);
   }
 }
-
  
 .what-is-fms:hover,
 .ans-what:hover {
   transform: scale(1.05);
-  opacity: 1;
-}
-
-.what-is-fms:not(:hover),
-.ans-what:not(:hover) {
-  opacity: 0.5;
 }
 
 .why {
-  margin-top: 1000px;
-  position: absolute;
-  z-index: -1;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, #b68b95, #cc8899, #bb4e69, #ab4760);
-  background-size: 300% 300%; 
-  animation: color 12s ease-in-out infinite;
+  padding-bottom: 80px;
 }
 
 .why-title {
   color: white;
   font-size: 80px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .ans-why {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
@@ -318,6 +290,7 @@ body {
   color: white;
   font-size: 40px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .collage {
@@ -327,30 +300,18 @@ body {
 }
 
 .collage2 {
-  width: 650px;
-  height: 400px;
+  width: 450px;
+  height: 300px;
   border-radius: 20px;
   box-shadow: 5px 5px 20px black;
   margin-bottom: 40px;
 }
 
-/* Social Icons Styling */
-.links {
-  margin-top: 1rem;
-}
-
-.links a {
-  font-size: 2rem; /* Set the icon size */
-  color: #fff; /* White icon color */
-  margin: 0 1rem;
-  transition: transform 0.3s ease, font-size 0.3s ease;
-}
-
-.links a:hover {
-  transform: translateY(-5px); /* Move up */
-  font-size: 2.5rem; /* Make the icons slightly bigger */
-}
-
-.links a:focus {
-  outline: none; /* Remove focus outline */
+.ans-why-box1,
+.ans-why-box2,
+.ans-why-box3,
+.ans-why-box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

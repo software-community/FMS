@@ -1,8 +1,8 @@
  /* notification animation */
 
  .phone {
-    width: 300px;
-    height: 450px;
+    width: 250px;
+    height: 400px;
     background: #000;
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
@@ -10,8 +10,8 @@
   }
 
   .screen {
-    width: 280px;
-    height: 430px;
+    width: 230px;
+    height: 380px;
     background: #fff;
     border-radius: 20px;
     margin: 10px;

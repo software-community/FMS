@@ -2,7 +2,7 @@
 
 .image-layout {
     position: relative;
-    width: 1200px; /* Adjust as needed */
+    width: 750px; /* Adjust as needed */
     height: 550px;
     margin: 0 auto; /* Center the layout */
 }
@@ -66,27 +66,27 @@
 .line-top-left {
     top: 85%;
     left: 50%;
-    height: 70%; /* Adjust dynamically */
-    transform: translate(-50%, -50%) rotate(-110deg); /* Adjust angle */
+    height: 50%; /* Adjust dynamically */
+    transform: translate(-50%, -50%) rotate(-140deg); /* Adjust angle */
 }
 
 .line-top-right {
     top: 85%;
     left: 50%;
-    height: 70%;
-    transform: translate(-50%, -50%) rotate(-71deg);
+    height: 50%;
+    transform: translate(-50%, -50%) rotate(-67deg);
 }
 
 .line-bottom-left {
     top: 85%;
     left: 50%;
-    height: 70%;
-    transform: translate(-50%, -50%) rotate(110deg);
+    height: 50%;
+    transform: translate(-50%, -50%) rotate(140deg);
 }
 
 .line-bottom-right {
     top: 85%;
     left: 50%;
-    height: 70%;
-    transform: translate(-50%, -50%) rotate(71deg);
+    height: 50%;
+    transform: translate(-50%, -50%) rotate(67deg);
 }

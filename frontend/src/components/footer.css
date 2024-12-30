@@ -1,26 +1,22 @@
 /* Footer styling */
 
 .footer {
-    background-color: #c75672;
-    margin-top: 3650px;
-    position: absolute;
-    z-index: -2;
-    background: #CC8899;
+    background: #4c00b0;
     background-size: 300% 300%; 
     animation: color 12s ease-in-out infinite;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
     font-size: 20px;
-
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .explore,
 .follow,
-.email {
-    margin-top: 40px;
+.services,
+.location{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,19 +24,41 @@
 
 .foot-title {
     margin: 10px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .link-text,
 .link-email {
-    color: rgb(255, 221, 225);
-    font-size: 25px;
-    margin: 0 10px;
+    color: white;
+    margin-bottom: 10px;
     text-decoration: none;
 }
 
 .link-icon {
-    margin: 0 20px;
+    margin: 15px 20px;
     text-decoration: none;
     color: rgb(255, 221, 225);
     font-size: 40px;
 }
+
+/* Social Icons Styling */
+.links {
+    margin-bottom: 1rem;
+  }
+  
+  .links a {
+    font-size: 2rem; /* Set the icon size */
+    color: #fff; /* White icon color */
+    margin: 0 1rem;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .links a:hover {
+    transform: translateY(-5px); /* Move up */
+    font-size: 2.5rem; /* Make the icons slightly bigger */
+  }
+  
+  .links a:focus {
+    outline: none; /* Remove focus outline */
+  }
