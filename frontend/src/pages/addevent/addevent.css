@@ -73,7 +73,7 @@
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   color: #333;
-  gap: min(270px, 15vw);
+  gap: 90px;
   background-image: url("bg.jpg");
   background-position-x: center;
   /* background-position:center; */
@@ -96,7 +96,7 @@
 .inputs_addevent {
   display: flex;
   flex-direction: column;
-  width:250px;
+  width:350px;
   gap: 22px;
   z-index: 1;
   transition: all 1s ease-out;
