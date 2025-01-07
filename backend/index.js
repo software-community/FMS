@@ -2,6 +2,7 @@ const express= require('express');
 const app = express();
 
 const eventRoutes = require('./routes/addevent.routes');
+const registration = require('./routes/registartion.routes');
 
 const dotenv=require('dotenv')
 dotenv.config()
@@ -22,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.use('/',eventRoutes);
+app.use('/',registration);
 
 app.listen(3000,(req,res)=>{
     console.log('Server is running on port 3000');
