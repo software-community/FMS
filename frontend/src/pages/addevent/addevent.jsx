@@ -77,6 +77,16 @@ function App() {
           <label for="event-head-mobile-1" className="label_addevent label-event-head-mobile_addevent">Mobile No.</label>
           <input type="number" id="event-head-mobile-1" className="input_addevent event-head-mobile_addevent event-head-mobile-1_addevent" placeholder="Mobile No. of the Event Head" name="event_head_mobile" required />
         </div>
+
+        <div className="part_addevent event-head-email_addevent">
+          <label for="event-head-email-1" className="label label-event-head-mail">Registration Fees</label>
+          <input type="Number" id="event-head-email-1" className="input event-head-email event-head-email-1_addevent" placeholder="Fees for Registration" name="event_fees" required />
+        </div>
+
+        <div className="part_addevent event-head-email_addevent">
+          <label for="event-head-email-1" className="label label-event-head-mail">Members Required</label>
+          <input type="Number" id="event-head-email-1" className="input event-head-email event-head-email-1_addevent" placeholder="No. of members required in the team" name="event_members_allowed" required />
+        </div>
       </div>
       <div className="part_addevent description_addevent">
         <div className="par_addeventt desc_addevent">

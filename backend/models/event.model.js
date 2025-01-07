@@ -43,6 +43,16 @@ const eventSchema = new mongoose.Schema({
         trim:true,
         minLength:[10,'Invalid Mobile Number']
     },
+    event_fees:{
+        type:Number,
+        required:true,
+        trim:true,
+    },
+    members_required:{
+        type:Number,
+        required:true,
+        trim:true,
+    },
     start_time:{
         type:String,
         required:true,

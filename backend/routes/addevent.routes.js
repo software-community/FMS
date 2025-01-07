@@ -21,6 +21,8 @@ router.post('/addevent',upload.single('files'),async (req,res)=>{
     const event_desc=req.body.event_description;
     const start_time=req.body.event_start;
     const end_time=req.body.event_end;
+    const event_fees=req.body.event_fees;
+    const members_required=req.body.event_members_allowed;
 
     const imageFile = req.file.path;
     const event_photo = fs.readFileSync(imageFile, { encoding: 'base64' });
@@ -35,7 +37,9 @@ router.post('/addevent',upload.single('files'),async (req,res)=>{
         start_time,
         end_time,
         fest_name,
-        event_photo
+        event_photo,
+        event_fees,
+        members_required
 
     })
     res.redirect('http://localhost:5173/addevent'); //add url where u wan to redirect again and again when events are submitted
