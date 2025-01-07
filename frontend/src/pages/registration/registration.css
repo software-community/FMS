@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a202c;
+    color: white;
+  }
+  
+  .containers_registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .form-container_registration {
+    background-color: #2d3748;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px; /* Increased width to accommodate image */
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row; /* Set layout to row to place form and image side by side */
+  }
+  
+  .form-title_registration {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .form-group_registration {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4a5568;
+    border-radius: 5px;
+    background-color: #2d3748;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus {
+    border-color: #3182ce;
+  }
+  
+  input[type="text"]:disabled,
+  input[type="number"]:disabled,
+  input[type="email"]:disabled {
+    background-color: #2d3748;
+    cursor: not-allowed;
+  }
+  
+  .but_registration {
+    text-align: center;
+  }
+  
+  .button_registration {
+    background-color: #3182ce;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button_registration:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .button_registration:focus {
+    outline: none;
+  }
+  
+  .button_registration:active {
+    background-color: #2c5282;
+  }
+  
+  .parentForm {
+    display: flex;
+    flex-direction: column; /* Stack fields vertically */
+    width: 100%;
+  }
+  
+  .child1,
+  .child2 {
+    width: 100%; /* Both children take up full width in column layout */
+  }
+  
+  .child1 .form-group_registration,
+  .child2 .form-group_registration {
+    width: 100%;
+  }
+  
+  /* Right-side image styles */
+  .form-container_registration img {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 20px; /* Add space between the form and the image */
+    display: block;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #2d3748;
+  }
+  
+  .query {
+    font-size: 0.9rem;
+  }
+  
+  .query .no {
+    font-weight: bold;
+  }
+  
