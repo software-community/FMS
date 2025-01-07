@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './login.css';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -36,7 +37,7 @@ const Login = () => {
           LOGIN
         </h2>
         <div className="w-full">
-          <h4 className="text-sm font-medium mb-2 ml-2">Email</h4>
+          <h4 className="text-sm font-medium mb-2 ml-2 text-left">Email</h4>
           <input
             className="w-full h-10 px-4 mb-5 bg-blue-50 rounded-full font-medium"
             type="text"
@@ -44,7 +45,7 @@ const Login = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <h4 className="text-sm font-medium mb-2 ml-2">Password</h4>
+          <h4 className="text-sm font-medium mb-2 ml-2 text-left">Password</h4>
           <input
             className="w-full h-10 px-4 mb-5 bg-blue-50 rounded-full font-medium"
             type="password"
