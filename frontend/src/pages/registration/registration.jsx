@@ -10,7 +10,7 @@ function Registration() {
 
         <div className="containers_registration">
           <form
-            action="http://localhost:3000/register"
+            action="http://localhost:3000/registration"
             method="POST"
             enctype="multipart/form-data"
           >
