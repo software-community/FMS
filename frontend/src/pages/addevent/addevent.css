@@ -10,7 +10,7 @@
 
 .containers_addevent {
   width: 80vw;
-  background-color: #cc8899;
+  background-color: #4c00b0;
   margin: auto;
   transition: all 1s ease-out;
   margin-top: 20px;
@@ -123,12 +123,8 @@
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: rgba(
-    204,
-    136,
-    153,
-    0.8
-  ); /* Light transparency for input fields */
+  background-color: #4c00b0;
+    
   font-weight: 650;
   font-size: 1rem;
   transition: all 1s ease-out;
@@ -499,7 +495,7 @@
   padding-bottom:20px;
   font-size:36px;
   font-weight:1000;
-  background-color:#cc8899;
+  background-color:#4c00b0;
   margin-top:25px;
 }
 
