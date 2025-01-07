@@ -83,6 +83,14 @@ function App() {
           <label for="event-description-1" className="label_addevent label-event-description_addevent">Description</label>
           <textarea type="text" id="event-description-1" className="input_addevent event-description_addevent event-description-1_addevent" placeholder="Briefly Describe the Event" name="event_description" required></textarea>
         </div>
+        <div className="part_addevent numberofparticipants_addevent">
+    <label for="numberofparticipants" className="label_addevent label-numberofparticipants_addevent">Number of Participants</label>
+    <input type="number" id="numberofparticipants" className="input_addevent numberofparticipants_addevent" placeholder="Number of Participants" name="Number of Participants" required />
+  </div>
+  <div className="part_addevent fees_addevent">
+    <label for="fees" className="label_addevent label-fees_addevent">Fees</label>
+    <input type="currency" id="fees" className="input_addevent fees_addevent" placeholder="Fees" name="Fees" required />
+  </div>
         <div className="photos_addevent">
           <div className="flex items-center justify-center w-full">
             <label for="files" className="photo-label_addevent flex flex-col items-center justify-center  border-2 border-gray-300 border-dashed rounded-lg cursor-pointer dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
