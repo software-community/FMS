@@ -1,0 +1,50 @@
+.why {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+  
+  .why-title {
+    color: white;
+    font-size: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .ans-why {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+  .why-1st {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .collage {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  .collage2 {
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+    margin-bottom: 40px;
+  }
+  
+  .ans-why-box1,
+  .ans-why-box2,
+  .ans-why-box3,
+  .ans-why-box4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
