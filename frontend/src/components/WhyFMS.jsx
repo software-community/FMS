@@ -1,3 +1,8 @@
+import './WhyFMS.css'
+import './image-layout.css'
+import './lock.css'
+import './phone.css'
+// import './test.css'
 
 function WhyFMS () {
     return (
@@ -59,19 +64,19 @@ function WhyFMS () {
                 <div className="ans-why-box4">
                     <p className="why-1st">&raquo; Real-Time Updates and Communication</p>
                     {/* a notification animation */}
-                    <div class="phone">
-                        <div class="screen">
-                        <div class="status-bar">12:45 PM</div>
-                        <div class="notifications">
-                            <div class="notification">
+                    <div className="phone">
+                        <div className="screen">
+                        <div className="status-bar">12:45 PM</div>
+                        <div className="notifications">
+                            <div className="notification">
                             <h4>New Message</h4>
                             <p>Advitiya Fest is successfully added.</p>
                             </div>
-                            <div class="notification">
+                            <div className="notification">
                             <h4>Schedule Updated</h4>
-                            <p>Don't forget your event at 3pm at the Sports Complex.</p>
+                            <p>Timings: 3pm and Venue: Sports Complex</p>
                             </div>
-                            <div class="notification">
+                            <div className="notification">
                             <h4>New Message</h4>
                             <p>Aarohan Fest successfully added.</p>
                             </div>
@@ -80,7 +85,6 @@ function WhyFMS () {
                     </div>
                 </div>
                 
-
             </div>
         </section>
     );

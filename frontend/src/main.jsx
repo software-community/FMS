@@ -1,16 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from "react-router";
 
-import './index.css'
-import './components/image-layout.css'
-import './components/lock.css'
-import './components/phone.css'
-import './components/footer.css'
-import './components/responsive.css'
-import './components/WhatIsFMS.css'
-import './components/WhyFMS.css'
-import './components/navbar.css'
-
 // Import pages here
 // import Home from './pages/home/Home';
 import LandingPage from './pages/Landing Page/landingPage';

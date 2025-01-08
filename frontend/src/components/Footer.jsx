@@ -1,4 +1,5 @@
-
+import './footer.css'
+// import './test.css'
 
 function Footer () {
     return (
@@ -14,8 +15,8 @@ function Footer () {
                 <p className="foot-title">Follow us :</p>
                 <div className="links">
                     <a target="_blank" className="link-icon" href="https://www.instagram.com/softcom_iitrpr/"><i className="fab fa-instagram"></i></a>
-                    <a className="link-icon" href="https://in.linkedin.com/company/softcom-iitrpr" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a className="link-icon" href="https://github.com/software-community" target="_blank"><i class="fab fa-github"></i></a>
+                    <a className="link-icon" href="https://in.linkedin.com/company/softcom-iitrpr" target="_blank"><i className="fab fa-linkedin"></i></a>
+                    <a className="link-icon" href="https://github.com/software-community" target="_blank"><i className="fab fa-github"></i></a>
                 </div>
 
                 <p className="foot-title">Email us :</p>
@@ -33,9 +34,9 @@ function Footer () {
 
             <div className="location">
                 <p className="foot-title">Location</p>
-                <p className="">Indian Institute of Technology Ropar</p>
-                <p className="">Rupnagar, Punjab, India</p>
-                <p className="">Pincode: 140001</p>
+                <p className="location-text">Indian Institute of Technology Ropar</p>
+                <p className="location-text">Rupnagar, Punjab, India</p>
+                <p className="location-text">Pincode: 140001</p>
             </div>
         </div>
     );

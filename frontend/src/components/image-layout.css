@@ -1,10 +1,12 @@
-/* image-layout styling */
-
+/* Base styling for image layout */
 .image-layout {
     position: relative;
-    width: 750px; /* Adjust as needed */
+    width: 750px;
     height: 550px;
-    margin: 0 auto; /* Center the layout */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .center-image {
@@ -12,11 +14,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2; /* Bring the central image above the lines */
+    z-index: 2;
 }
 
 .center-image img {
-    width: 250px; /* Adjust as needed */
+    width: 250px;
     height: 150px;
     border: solid 2px white;
 }
@@ -27,9 +29,9 @@
 }
 
 .corner-image img {
-    width: 150px; /* Adjust as needed */
+    width: 150px;
     height: 100px;
-    border: solid 2px white; /* Make it circular */
+    border: solid 2px white;
 }
 
 /* Positioning corner images */
@@ -56,18 +58,17 @@
 /* Lines connecting the images */
 .line {
     position: absolute;
-    background-color: white; /* Line color */
-    width: 2px; /* Line thickness */
-    z-index: 0; /* Place lines below images */
-    transform-origin: top center; /* Ensure lines rotate correctly */
+    background-color: white;
+    width: 2px;
+    z-index: 0;
+    transform-origin: top center;
 }
 
-/* Specific lines for each corner */
 .line-top-left {
     top: 85%;
     left: 50%;
-    height: 50%; /* Adjust dynamically */
-    transform: translate(-50%, -50%) rotate(-140deg); /* Adjust angle */
+    height: 50%;
+    transform: translate(-50%, -50%) rotate(-140deg);
 }
 
 .line-top-right {
@@ -89,4 +90,110 @@
     left: 50%;
     height: 50%;
     transform: translate(-50%, -50%) rotate(67deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .image-layout {
+        width: 600px;
+        height: 450px;
+    }
+
+    .center-image img {
+        width: 200px;
+        height: 120px;
+    }
+
+    .corner-image img {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-layout {
+        width: 500px;
+        height: 375px;
+    }
+
+    .center-image img {
+        width: 180px;
+        height: 100px;
+    }
+
+    .corner-image img {
+        width: 100px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-layout {
+        width: 400px;
+        height: 300px;
+    }
+
+    .center-image img {
+        width: 150px;
+        height: 90px;
+    }
+
+    .corner-image img {
+        width: 80px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-layout {
+        width: 300px;
+        height: 225px;
+    }
+
+    .center-image img {
+        width: 120px;
+        height: 70px;
+    }
+
+    .corner-image img {
+        width: 60px;
+        height: 40px;
+    }
+
+    .top-left {
+        top: 5%;
+        left: 5%;
+    }
+
+    .top-right {
+        top: 5%;
+        right: 5%;
+    }
+
+    .bottom-left {
+        bottom: 5%;
+        left: 5%;
+    }
+
+    .bottom-right {
+        bottom: 5%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 360px) {
+    .image-layout {
+        width: 250px;
+        height: 200px;
+    }
+
+    .center-image img {
+        width: 100px;
+        height: 60px;
+    }
+
+    .corner-image img {
+        width: 50px;
+        height: 30px;
+    }
 }

@@ -1,19 +1,19 @@
-
+import './WhatIsFMS.css'
 
 function WhatIsFMS() {
     return (
         <section className="what">
-            <div className="what-title">
-                <h1>What is FMS?</h1>
+            <div className="what-title-container">
+                <h1 className="what-title">What is FMS?</h1>
             </div>
             <div className="what-content">
                 <div className="what-is-fms">
                     <img className="collage" src="./collage/collage.jpg" alt="image" />
                 </div>
                 <div className="ans-what">
-                    <div className="ans-what-title">
-                        <h2>IIT ROPAR's</h2>
-                        <h3>Fest Management System (FMS)</h3>
+                    <div className="ans-what-title-container">
+                        <h2 className="ans-what-title">IIT ROPAR's</h2>
+                        <h3 className="ans-what-title">Fest Management System (FMS)</h3>
                     </div>
                    
                    <div className="ans-what-grid">
@@ -31,7 +31,7 @@ function WhatIsFMS() {
                             <ul>
                                 <li>Upload media of event on different platforms</li>
                                 <li>Shareable event pages for promotion</li>
-                                <img className="pic" src="./assets/advertise.png" alt="advertise" />
+                                <img className="box2-image pic" src="./assets/advertise.png" alt="advertise" />
                             </ul>
                         </div>
                         <div className="grid box3">
