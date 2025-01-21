@@ -5,24 +5,13 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   overflow: auto; 
   font-family: Arial, sans-serif;
 }
 
-body {
-  background: white;
-  padding-top: 60px; 
-}
-
 .navlist a{
   text-decoration: none;
-}
-
-
-.video-section {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
 }
 
 #home-video {
@@ -40,19 +29,17 @@ body {
 }
 
 .container {
-  height: 100%;
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Aligns children vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  height: 100vh; /* Full viewport height */
+  width: 100vh; 
+  z-index: 1; /* Keeps it above the video */
+  color: white; /* Ensures text color */
   text-align: center;
-  position: relative;
-  z-index: 1;
-  color: white;
-  /*text-shadow: 0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 20px silver,
-      0 0 30px silver,
-      0 0 40px silver,
-      0 0 55px silver,
-      0 0 70px silver;*/
 }
+
 
 .container h1 {
   font-size: 10em;
@@ -61,14 +48,18 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  justify-self: center;
+  align-self: center;
 }
 
 .container p {
   font-size: 3.5em;
   margin: 0;
   font-family: "Limelight", serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  justify-self: center;
+  align-self: center;
 }
 
 .navbar {
@@ -137,43 +128,7 @@ font-style: normal;
   color: green;
 }
 
-.dashboard {
-  display: flex;
-  height: 100vh;
-}
 
-.sidebar {
-  width: 200px;
-  background-color: #333;
-  color: white;
-  padding: 20px;
-}
 
-.content {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-}
 
-.main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; 
-  padding: 50px;
-}
-
-#button {
-  margin: 0 10px; 
-}
-
-#button button {
-  padding: 10px 40px;
-  font-size: 1.2em;
-  border: none;
-  border-radius: 25px; 
-  background-color: #4CAF50; 
-  color: white; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease;
-}
 
