@@ -5,6 +5,7 @@ import './index.css'
 
 // Import pages here
 import Home from './pages/home/Home';
+import Dashboard from './pages/dashboard/dashboard'
 // import Login from './pages/login/Login';
 // import SignUp from './pages/signup/Signup';
 // and so on....
