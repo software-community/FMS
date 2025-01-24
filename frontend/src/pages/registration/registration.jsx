@@ -2,12 +2,38 @@ import { useState } from 'react';
 import './registration.css';
 
 function Registration() {
+var event_members;
+var event_photo;
+var fest_photo;
+  const fetchData = () => {
+    fetch('http://localhost:3000/registrationss') // Call the backend route
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json(); // Parse JSON response
+      })
+      .then(data => {
+        event_members = data['event_members'];
+        event_photo = data['event_photo'];
+        fest_photo = "data:image/png;base64,"+""+data['fest_photo'];
+
+      })
+      .catch(error => {
+        console.error('Error fetching the data:', error);
+      });
+  };
+
+  fetchData();
+  let n=event_members;
   return (
     <>
       <body className="bg-gray-900 main_registration">
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
-
+        <div>
+        <img src={`data:image/png;base64,${fest_photo}`} />
+        </div>
         <div className="containers_registration">
           <form
             action="http://localhost:3000/registration"
@@ -56,43 +82,18 @@ function Registration() {
                     />
                   </div>
                   </div>
-                <div className="child2">
-                  <div className="form-group_registration">
-                    <label htmlFor="name">Member 2 Name:</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="member2_name"
-                      required
-                    />
-                  </div>
-                  <div className="form-group_registration">
-                    <label htmlFor="name">Member 3 Name:</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="member3_name"
-                      required
-                    />
-                  </div>
-                  <div className="form-group_registration">
-                    <label htmlFor="name">Member 4 Name:</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="member4_name"
-                      required
-                    />
-                  </div>
-                  <div className="form-group_registration">
-                    <label htmlFor="name">Member 5 Name:</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="member5_name"
-                      required
-                    />
-                  </div>
+                <div className="child2">       {/*Made a loop to show just that much number of fields for member names which are required*/}
+                  {[...Array(n)].map((_, i) => (
+                    <div className="form-group_registration" key={i}>
+                      <label htmlFor={`member${i + 1}_name`}>Member {i + 1} Name:</label>
+                      <input
+                        type="text"
+                        id={`member${i + 1}_name`}
+                        name={`member${i + 1}_name`}
+                        required
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -113,9 +114,10 @@ function Registration() {
           <div className="query">
             <div className="no">Questions? Call 000-800-919-1694</div>
             {/* Footer Content */}
-          </div>
+            </div>
         </footer>
       </body>
+
     </>
   );
 }
