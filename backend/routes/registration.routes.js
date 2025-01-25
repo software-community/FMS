@@ -3,6 +3,12 @@ const router = express.Router();
 const multer=require('multer');
 const upload = multer({ dest: 'uploads/' });
 const fs = require('fs');
+const app=express();
+const eventSchema=require('../models/event.model');
+const festSchema=require('../models/fest.model');
+
+
+app.use(express.json())
 
 const registSchema=require('../models/registration.model');
 
@@ -27,4 +33,20 @@ router.post('received',(req,res)=>{
     res.send("Team Registered");
 })
 
+router.get('/registrationss',async (req,res)=>{
+    const eventt=await eventSchema.findOne({fest_name:'oracl', event_name:'juju'});
+    if(!eventt){
+        return res.status(404).send('Event not found');
+    }
+    
+    const festss=await festSchema.findOne({fest_name:"zeitgeist"});
+    if(!festss){
+        return res.status(404).send('Fest not found');
+    }
+    
+    var arr={'fest_photo':festss.fest_photo,'event_photo':eventt.event_photo,'event_members':eventt.event_members};
+    console.log(arr)
+    
+    res.json(arr);
+    })
 module.exports=router;

@@ -2,10 +2,13 @@ const express= require('express');
 const app = express();
 
 const eventRoutes = require('./routes/addevent.routes');
-const registration = require('./routes/registartion.routes');
+const registration = require('./routes/registration.routes');
 
 const dotenv=require('dotenv')
 dotenv.config()
+
+const cors = require('cors');
+app.use(cors());
 
 
 const connectToDB=require('./config/db');

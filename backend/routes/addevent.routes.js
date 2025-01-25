@@ -13,12 +13,14 @@ router.get('/addevent',(req,res)=>{
 
 router.post('/addevent',upload.single('files'),async (req,res)=>{
     const fest_name=req.body.fest_name.toLowerCase();
-    const event_name=req.body.event_name;
+    const event_name=req.body.event_name.toLowerCase();
     const event_day=req.body.event_day;
     const event_head_name=req.body.event_head_name;
     const email=req.body.event_head_email;
     const mobile_no=req.body.event_head_mobile;
     const event_desc=req.body.event_description;
+    const event_members=req.body.event_members;
+    const event_fees=req.body.event_fees;
     const start_time=req.body.event_start;
     const end_time=req.body.event_end;
 
@@ -35,6 +37,8 @@ router.post('/addevent',upload.single('files'),async (req,res)=>{
         start_time,
         end_time,
         fest_name,
+        event_fees,
+        event_members,
         event_photo
 
     })
@@ -52,7 +56,7 @@ router.post('/fest',upload.single('file'), async (req,res)=>{
     const fest_name=req.body.fest_name_addfest.toLowerCase();
     const fest_from=req.body.fest_from_addfest;
     const fest_to=req.body.fest_to_addfest;
-    const fest_location=req.body.fest_location_addfest;
+    const fest_location=req.body.fest_location_addfest.toLowerCase();
     const fest_head_name=req.body.fest_head_name_addfest;
     const fest_head_email=req.body.fest_head_email_addfest;
     const fest_head_mobile=req.body.fest_head_mobile_addfest;

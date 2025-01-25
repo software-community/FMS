@@ -25,6 +25,16 @@ const eventSchema = new mongoose.Schema({
         required:true,
         trim:true,
     },
+    event_members:{
+        type:Number,
+        required:true,
+        trim:true,
+    },
+    event_fees:{
+        type:Number,
+        required:true,
+        trim:true,
+    },
     event_head_name:{
         type:String,
         required:true,
