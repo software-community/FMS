@@ -43,7 +43,7 @@ body {
 }
 
 .form-container_registration {
-  background-color: rgba(255, 255, 255, 0.9); 
+  background-color: #212121; 
   border-radius: 20px;
   flex: 1;
   width: 700px; 
@@ -52,6 +52,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
+
 }
 
 .form-title_registration {
@@ -78,7 +80,7 @@ label {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #4a5568;
+  color: #cc8899;
 }
 
 input[type="text"],
@@ -89,8 +91,8 @@ input[type="tel"] {
   padding: 15px;
   border: 1px solid #cbd5e0;
   border-radius: 10px;
-  background-color: #f7fafc;
-  color: #2d3748;
+  background-color: #212121;
+  color: #FFFACD;
   font-size: 1.2rem;
   height: 50px;
   outline: none;
