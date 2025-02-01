@@ -1,0 +1,160 @@
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    font-family: "Roboto Mono", serif;
+  }
+  
+
+  /* Animated Dark Purple-Green Gradient Navbar */
+  .navbar {
+    background: linear-gradient(45deg, #2C003E, #3E206D, #2C003E);
+    animation: gradientShift 8s ease infinite;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+  }
+  
+  /* Gradient Animation Keyframes */
+  @keyframes gradientShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Headings Styling */
+  #headings {
+    display: flex;
+    align-items: center;
+  }
+  
+  #headings h1 {
+    font-family: "Playwrite AU SA", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    animation: bounceIn 0.8s ease-out;
+    font-size: xx-large;
+  }
+  
+  #headings h4 {
+    font-family: "Limelight", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  #fests {
+    color: #e0e0e0;
+    margin-right: 20px;
+  }
+  
+  #fests:hover {
+    color: #8aff8a; /* playful light green accent */
+  }
+  
+  /* Search Container & Interactive Search Bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #search {
+    padding: 10px 20px;
+    width: 300px;
+    margin-right: 10px;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: width 0.4s ease, background-color 0.4s ease;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 4px;
+    color: #e0e0e0;
+  }
+  
+  #search::placeholder {
+    color: #888;
+  }
+  
+  #search:focus {
+    width: 350px;
+    background-color: #333;
+    outline: none;
+    color: white;
+  }
+  
+  /* Bouncy Button Effect */
+  #submit {
+    padding: 10px 0px;
+    width: 80px;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+    background-color: #3E206D;
+    border: none;
+    border-radius: 4px;
+    color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    transform: scale(1.1); 
+    color: #8aff8a;
+  }
+  
+  /* Main Content Grid */
+  .main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    padding: 10px;
+    animation: fadeIn 1s ease-out;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  /* Each grid item styled like a card */
+  .main > div {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Staggered Fade In for Grid Items */
+  .main > div:nth-child(1) { animation-delay: 0.2s; }
+  .main > div:nth-child(2) { animation-delay: 0.4s; }
+  .main > div:nth-child(3) { animation-delay: 0.6s; }
+  .main > div:nth-child(4) { animation-delay: 0.8s; }
+  .main > div:nth-child(5) { animation-delay: 1s; }
+  
+  /* Hover Effect: Scale and Glow */
+  .main > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Bounce In Animation for #fests Heading */
+  @keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.2); opacity: 1; }
+    80% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+  
+
+  
