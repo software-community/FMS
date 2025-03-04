@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #3B008A, #4f119f, #532a89, #633f92) !important;   
+    background-size: 300% 300%; 
+    animation: color 10s ease-in-out infinite;
+  }
+  
+  @keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+  }
+  
+  .navbar {
+    background-color: #4c00b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 2.5px 20px;
+    box-shadow: 0px 5px 30px rgb(0, 0, 0, 0.8);
+    z-index: 100;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px;
+    margin: 5px 30px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
+  }
+  
+  .login-button,
+  .sign-up-button {
+    padding: 5px 30px;
+    margin: 0px 20px; 
+    background-color: transparent;
+    border: solid 3px white;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    /* transition: background-color 0.3s, color 0.3s, transform 0.3s; */
+    transition: all 0.3s;
+  }
+  
+  .login-button:hover,
+  .sign-up-button:hover {
+    transform: scale(1.08);
+    background-color: white;
+    color: #cc8899;
+  }
+  
+ /* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* body {
+    margin: 0;
+    padding: 0;
+  } */
+  .navbar {
+    padding: 8px 10px; /*Reduce padding for smaller screens*/
+    top: 0;
+    left: 0;
+  }
+
+  .logo {
+    width: 50px; /* Scale down logo */
+  }
+
+  .login-button,
+  .sign-up-button {
+    padding: 8px 15px; /* Reduce button padding */
+    font-size: 16px; /* Adjust font size */
+    margin: 0px 5px; /* Decrease spacing between buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    padding: 5px 10px; /* Reduce padding further for smaller devices */
+    margin-right: 10px;
+  }
+
+  .logo {
+    width: 40px; /* Further reduce logo size */
+  }
+
+  .login-button,
+  .sign-up-button {
+    padding: 6px 12px; /* Further reduce button padding */
+    font-size: 14px; /* Adjust font size for small screens */
+    margin: 0px 3px; /* Adjust margin between buttons */
+  }
+}
